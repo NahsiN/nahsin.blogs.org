@@ -1,0 +1,63 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t
+#+options: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+options: email:nil f:t inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
+#+options: tasks:t tex:t timestamp:t title:t toc:t todo:t |:t
+#+title: 2020-05-18-math-equations
+#+date: <2020-05-18 Mon>
+#+author: Nishan Mann
+#+email: nishan@pop-os
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 26.3 (Org mode 9.3.6)
+
+#+options: html-link-use-abs-url:nil html-postamble:auto html-preamble:t
+#+options: html-scripts:t html-style:t html5-fancy:nil tex:t
+#+html_doctype: xhtml-strict
+#+html_container: div
+#+description:
+#+keywords:
+#+html_link_home:
+#+html_link_up:
+#+html_mathjax:
+#+html_head: <link rel="stylesheet" type="text/css" href="../css/site.css" />
+#+html_head_extra:
+#+subtitle:
+#+infojs_opt:
+#+creator: <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.3 (<a href="https://orgmode.org">Org</a> mode 9.3.6)
+#+latex_header:
+
+Imagine racing your car against an F1 car. Your car has speed $100~km/h$
+while the F1 car has speed $300~km/h$. The race director decides to show mercy
+and gives your car a head start. How long will it take for the F1 car
+to catch up to you?
+
+Denote $t_0$ as the head start given to your car. Your car travels a distance $d$ as,
+\begin{equation}
+  \label{eq:car}
+  d = 100t,
+\end{equation}
+and the F1 car will travel that same distance as,
+\begin{equation}
+  \label{eq:f1}
+  d = 300(t - t_0).
+\end{equation}
+
+Substituting \eqref{eq:car} into \eqref{eq:f1} and solving for $t$ gives
+\begin{align}
+  100t &= 300(t - t_0), \\
+  200t &= 300t_0, \\
+  \label{eq:t}
+  t &= \frac{3}{2}t_0.         
+\end{align}
+
+Now, let's do a drag race! Let the drag strip be a $1~km$ long straight. What is the
+head start your car requires to tie or win the race?
+
+Substituting \eqref{eq:t} into \eqref{eq:car}, we've
+\begin{equation}
+  \label{eq:d}
+  d = 150t_0.
+\end{equation}
+We plug in the numbers to get $t_0 = 1/150~h = 24~s$. Therefore, your car
+needs to have a head start of at least $24~s$ to tie or win.
